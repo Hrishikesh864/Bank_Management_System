@@ -1,0 +1,68 @@
+  							 L&G BANK MANAGEMENT SYSTEM
+
+Class Design:
+Transactions ------->Operations--------> Login -------> Main
+Address----->New User-----------------------> Main
+Loan Services------->Existing Loan Login-------->Loan Menu-------->Main
+Address----->Loan New User-------->Loan Menu-------->Main
+********************************************************************************************************************************************************************************************
+Storage:
+Linked List and Files(bank.txt and loan.txt).
+bank.txt - This file contains all account related information of all bank account holders.
+loan.txt - This file contains all loan account related information of all loan account holders.
+********************************************************************************************************************************************************************************************
+Detailed Description of Services:
+
+Main Menu has 4 options - 1. New User Registration (Create new Account).
+			  2. Log In (Existing User Serivces).
+			  3. Loan Menu
+                          4. Save and Exit.
+
+1. Create Account - To Create a new account User have to provide some essential information as-
+		    	1. Name
+			2. Address
+		 	3. User have to Enter a Phone No., using which user can log in to the system for further operations.
+			4. User have to create a PIN, using which user can log in to the system for further operations.
+			5. Adhaar Card Number
+			6. PAN
+			7. Initial Deposit
+
+2. Login - To login into his/her account User have to enter the Phone no., which was created at the time of registration and enter the correct PIN, which he/she has created at time of 
+	   registration.
+********************************************************************************************************************************************************************************************
+After Logging in successfully, User will be displayed a menu offering all the operations defined above, he/she can choose from the list.
+
+3. Transactions - User can deposit, withdraw and check balance of their respective account here. There are 4 services provided under this 
+		  1) Deposit - User has to enter the amount he wants to deposit and that amount will be added to his total balance.
+	 	  2) Withdraw - User has to enter the amount he wants to withdraw and that amount will be deducted from his total balance, if user does not have sufficient funds, a message 
+		                will be displayed regarding the same.
+	  	  3) Check Balance - User Account Balance will be displayed.
+	   	  4) Return to previous Menu.
+
+4. Account Details - All the User information alongwith account number, IFSC code and bank name will be displayed on the screen.
+
+5. Log Out - User session will be ended and he will be redirected to main window.
+
+6. Deactivate - User details will be deleted from Bank's Database and his all operations will be freezed.
+********************************************************************************************************************************************************************************************
+7. Loan Menu - To successfully take loan from our bank, you have to open a loan account. It has 3 options - 1. New Loan User Registration (Create new Loan Account).
+			  										    2. Log In (Existing Loan User Serivces).
+                          										    3. Save and Exit. 
+8. Create Account - To Create a new account User have to provide some essential information as-
+		    	1. Name
+			2. Address
+		 	3. User have to Enter a Phone No., using which user can log in to the system for further operations.
+			4. User have to create a PIN, using which user can log in to the system for further operations.
+			5. Adhaar Card Number
+			6. PAN
+
+9. Login - To login into his/her account User have to enter the Phone no., which was created at the time of registration and enter the correct PIN, which he/she has created at time of 
+	   registration.
+********************************************************************************************************************************************************************************************
+After Logging in successfully, User will be displayed a menu offering all the operations defined above, he/she can choose from the list. Rate of interest is 7% and Duration can only be in 
+Years. Interest will be calculated using Simple Interest. On choosing this option user will be displayed a menu having 4 options -
+	  1) Apply for a New Loan - User has to enter the amount he/she wants to take loan of and number of years for which loan has to be repaid.
+	  2) Repay Loan - User has to enter amount he/she wants to repay of loan 
+	  3) Loan Details - All the User information related to loan like loan account number, duration, interest, amount to repay, amount left and amount paid will be displayed on the 
+			    screen.
+	  4) Return to previous Menu. 
